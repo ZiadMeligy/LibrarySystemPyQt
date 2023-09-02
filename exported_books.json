@@ -1,0 +1,17 @@
+{
+    "Animal Farm": {
+        "author": "George Oril",
+        "cost": 185,
+        "section": "Fantasia"
+    },
+    "Little Women": {
+        "author": "Louisa May Alcott",
+        "cost": 370,
+        "section": "Children Literature"
+    },
+    "Anne With An E": {
+        "author": "Lucy Maud",
+        "cost": 420,
+        "section": "Children Literature"
+    }
+}

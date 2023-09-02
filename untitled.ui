@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LibrarySystem</class>
+ <widget class="QMainWindow" name="LibrarySystem">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>826</width>
+    <height>721</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">table {
+  border-collapse: collapse;
+}
+ th {
+  background: #ccc;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background: #efefef;
+}
+
+tr:hover {
+  background: #d1d1d1;
+}</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background: #181818;</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <family>Agency FB</family>
+          <pointsize>22</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:white</string>
+        </property>
+        <property name="text">
+         <string>Library Name:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="profitlabel">
+          <property name="font">
+           <font>
+            <family>Agency FB</family>
+            <pointsize>22</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:white</string>
+          </property>
+          <property name="text">
+           <string>Total Profit:</string>
+          </property>
+          <property name="margin">
+           <number>6</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="noBooks">
+          <property name="font">
+           <font>
+            <family>Agency FB</family>
+            <pointsize>22</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:white</string>
+          </property>
+          <property name="text">
+           <string>No. of Books Sold:</string>
+          </property>
+          <property name="margin">
+           <number>6</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <family>Agency FB</family>
+            <pointsize>22</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:white</string>
+          </property>
+          <property name="text">
+           <string>Books in Store:</string>
+          </property>
+          <property name="margin">
+           <number>6</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="noSections">
+          <property name="font">
+           <font>
+            <family>Agency FB</family>
+            <pointsize>22</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:white</string>
+          </property>
+          <property name="text">
+           <string>No. of Sections:</string>
+          </property>
+          <property name="margin">
+           <number>6</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QPushButton" name="AddBookBtn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Agency FB</family>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:black;
+background-color: #03D8F1;
+border-radius:8px;</string>
+        </property>
+        <property name="text">
+         <string>ADD BOOK</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="AddSectionBtn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Agency FB</family>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:black;
+background-color: #03D8F1;
+border-radius:8px;</string>
+        </property>
+        <property name="text">
+         <string>ADD SECTION</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="ExportDataBtn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Agency FB</family>
+          <pointsize>20</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:black;
+background-color: #03D8F1;
+border-radius:8px;</string>
+        </property>
+        <property name="text">
+         <string>SELL BOOK</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ImportDataBtn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Agency FB</family>
+          <pointsize>20</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:black;
+background-color: #03D8F1;
+border-radius:8px;</string>
+        </property>
+        <property name="text">
+         <string>IMPORT DATA</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="SellBookBtn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Agency FB</family>
+          <pointsize>20</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:black;
+background-color: #03D8F1;
+border-radius:8px;</string>
+        </property>
+        <property name="text">
+         <string>EXPORT/SAVE DATA(BONUS if i have time)</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="font">
+         <font>
+          <family>Agency FB</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableView::item:selected {
+color:white;
+background: #000000;
+font-weight:900;
+
+}
+QHeaderView::section {
+color:white;
+background-color:#232326;
+
+}</string>
+        </property>
+        <property name="showGrid">
+         <bool>false</bool>
+        </property>
+        <property name="cornerButtonEnabled">
+         <bool>false</bool>
+        </property>
+        <column>
+         <property name="text">
+          <string>Title</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Author</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Cost</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Section</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>826</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
